@@ -1,0 +1,179 @@
+/*Header*/
+.site-header {
+  position: relative;
+}
+.header {
+  padding: 21px 0 19px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-link {
+    margin-right: 26px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #837D88;
+    transition: all 0.3s linear;
+  }
+  .item-link{
+    &:hover {
+      color: #000;
+    }
+  }
+  
+  .item-link{
+    &:nth-child(3) {
+      margin-right: 33px;
+    }
+  }
+  
+  .btn {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2C2830;
+    padding: 13px 28px;
+    border: 1.5px solid #2C2830;
+    transition: all 0.3s linear;
+  }
+  .btn {
+    &:hover {
+      background-color:#2C2830 ;
+      color: #fff;
+    }
+  }
+  .btn-menyu {
+    display: none;
+  }
+}
+@media only screen and (max-width:600px) {
+.header {
+
+  .header-right {
+    display: none;
+    text-align: center;
+  }
+  .btn-menyu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+border: 1.5px solid #2C2830;
+background-image: url("../images/Group\ \(1\).svg");
+background-repeat: no-repeat;
+background-position: center;
+  }
+  .nav--active {
+    padding: 40px 24px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/menu-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+.nav-list {
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.item-link {
+  margin: 0;
+}
+.btn {
+text-align: center;
+border-color: #fff;
+color: #fff;
+}
+.list-item{
+  margin-bottom: 24px;
+}
+
+
+
+
+
+  }
+  .nav--active + .btn-menyu {
+    background-image: url("../images/Group\ 3\ \(1\).svg");
+  }
+}
+}
+@media only screen and (max-width:350px) {
+  .header {
+  
+    .header-right {
+      display: none;
+      text-align: center;
+    }
+    .btn-menyu {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: #FFFFFF;
+  border: 1.5px solid #2C2830;
+  background-image: url("../images/Group\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-position: center;
+    }
+    .nav--active {
+      padding: 40px 24px;
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      z-index: 5;
+      width: 100%;
+      height: 100vh;
+      background-image: url("../images/menu-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  .nav-list {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-link {
+    margin: 0;
+  }
+  .btn {
+  text-align: center;
+  border-color: #fff;
+  color: #fff;
+  }
+  .list-item{
+    margin-bottom: 24px;
+  }
+  
+  
+  
+  
+  
+    }
+    .nav--active + .btn-menyu {
+      background-image: url("../images/Group\ 3\ \(1\).svg");
+    }
+  }
+  }
